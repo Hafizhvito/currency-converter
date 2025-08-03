@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Konversi Mata Uang</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💱</text></svg>"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ===== HEADER SECTION ===== -->
+      <div class="header">
+        <h1>💱 Kalkulator Konversi Mata Uang</h1>
+        <p>Konversi mata uang dengan nilai tukar real-time</p>
+      </div>
+
+      <!-- ===== CONVERTER SECTION ===== -->
+      <div class="converter-section">
+        <form class="converter-form" id="converterForm">
+          <!-- From Currency Input -->
+          <div class="input-group">
+            <label for="fromAmount">Dari</label>
+            <div class="currency-input">
+              <input
+                type="number"
+                id="fromAmount"
+                class="amount-input"
+                placeholder="Masukkan jumlah"
+                min="0"
+                step="0.01"
+                required
+              />
+              <select id="fromCurrency" class="currency-select" required>
+                <option value="">Pilih Mata Uang</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Swap Button -->
+          <div class="swap-container">
+            <button
+              type="button"
+              class="swap-btn"
+              id="swapBtn"
+              title="Tukar Mata Uang"
+            >
+              ⇅
+            </button>
+          </div>
+
+          <!-- To Currency Input -->
+          <div class="input-group">
+            <label for="toCurrency">Ke</label>
+            <div class="currency-input">
+              <input
+                type="text"
+                id="toAmount"
+                class="amount-input"
+                placeholder="Hasil konversi"
+                readonly
+              />
+              <select id="toCurrency" class="currency-select" required>
+                <option value="">Pilih Mata Uang</option>
+              </select>
+            </div>
+          </div>
+        </form>
+
+        <!-- Result Display -->
+        <div class="result-display" id="resultDisplay" style="display: none">
+          <div class="result-amount" id="resultAmount">0.00</div>
+          <div class="exchange-rate" id="exchangeRate">1 USD = 1 USD</div>
+        </div>
+
+        <!-- Error Message -->
+        <div
+          class="error-message"
+          id="errorMessage"
+          style="display: none"
+        ></div>
+      </div>
+
+      <!-- ===== HISTORY SECTION ===== -->
+      <div class="history-section">
+        <div class="history-header">
+          <h3>📊 Riwayat Konversi</h3>
+          <button class="clear-history-btn" id="clearHistoryBtn">
+            🗑️ Hapus Riwayat
+          </button>
+        </div>
+        <div class="history-list" id="historyList">
+          <div class="no-history">Belum ada riwayat konversi</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="script.js"></script>
+  </body>
+</html>
