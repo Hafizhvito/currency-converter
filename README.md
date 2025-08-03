@@ -187,9 +187,7 @@ window.conversionHistoryData; // Lihat data riwayat
 ## 👨‍💻 Author
 
 **Hafizh Vito Pratomo**
-- GitHub: [@username-anda](https://github.com/username-anda)
-- Email: your.email@example.com
-- Portfolio: [your-portfolio.com](https://your-portfolio.com)
+- Email: hafizhvito2@gmail.com
 
 ##  Acknowledgments
 
