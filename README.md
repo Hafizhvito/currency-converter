@@ -5,7 +5,9 @@ Aplikasi web modern untuk konversi mata uang dengan nilai tukar real-time, diban
 
 ## Demo Live
 
-🔗 **[Lihat Demo]([https://username-anda.github.io/currency-converter](https://relaxed-paletas-11d110.netlify.app/))**
+🔗 **[Lihat Demo]**
+
+https://relaxed-paletas-11d110.netlify.app/
 
 ##  Fitur Utama
 
